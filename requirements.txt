@@ -1,0 +1,4 @@
+Flask
+nltk
+openai
+python-dotenv

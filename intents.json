@@ -1,0 +1,38 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey"],
+      "responses": [
+        "1. Hello there!\n2. Welcome to the chat workspace.\n3. How can I assist you today?",
+        "1. Hi there!\n2. Great to connect with you.\n3. Let me know what you are working on.",
+        "1. Hey 👋\n2. System is fully operational.\n3. Ready for your instructions."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "see you", "goodbye"],
+      "responses": [
+        "1. Goodbye!\n2. Your chat session is ending.\n3. Have a wonderful day ahead!",
+        "1. See you later!\n2. All workspace scripts paused.\n3. Catch you next time!",
+        "1. Take care!\n2. Session logged successfully.\n3. I will be here whenever you return."
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": ["what is your name", "who are you"],
+      "responses": [
+        "1. Identity: Python Chatbot 🤖\n2. Engine: Powered by Groq Cloud API architecture\n3. Role: Dedicated virtual development assistant.",
+        "1. Designation: AI Virtual Assistant\n2. Scope: Handling automation and user processing queries\n3. Status: Ready to assist."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": ["help", "can you help me"],
+      "responses": [
+        "1. Assistance Status: Available\n2. Capabilities: Code formatting, answering general logic questions, and text processing\n3. Next Step: Please type out your explicit problem below.",
+        "1. I am here to help 😊\n2. Please specify your programming language or tool\n3. Drop your request details and I will extract the steps for you."
+      ]
+    }
+  ]
+}

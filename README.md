@@ -75,24 +75,6 @@ python app.py
 Open your preferred browser client and navigate directly to **`http://127.0.0.1:5000`** to begin chatting with the conversational engine.
 
 ---
-
-## ⚙️ How the Engine Functions
-
-### Context Retention Logic
-Every user prompt sent to the server route `/chat` updates a session-level state list array. This structure is packaged together with localized system directives and dispatched directly to the Google endpoint using an OpenAI compatibility layer structure:
-
-```python
-# Extracting history arrays securely from the browser session context
-history = session["chat_history"]
-history.append({"role": "user", "content": user_message})
-
-# Transmitting full payload context arrays down to Gemini
-response = client.chat.completions.create(
-    model="gemini-2.5-flash",
-    messages=[system_instruction] + history
-)
-```
-
 ### Markdown Text Stripping Functionality
 Before the final model text outputs hit the client browser window view, regex filtering operations intercept and remove raw Markdown syntax components:
 ```python
